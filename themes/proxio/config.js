@@ -7,15 +7,15 @@ const CONFIG = {
 
   // 英雄区块导航
   PROXIO_HERO_ENABLE: true, // 开启英雄区
-  PROXIO_HERO_TITLE_1: '开源且免费的基于 Notion 笔记的网站构建工具', // 英雄区文字
-  PROXIO_HERO_TITLE_2: '通过笔记无感知地建站、成倍放大您的价值', // 英雄区文字
+  PROXIO_HERO_TITLE_1: '盗火者：路漫漫其修远兮，吾将上下而求索。', // 英雄区文字
+  PROXIO_HERO_TITLE_2: '将最前沿的 AGI 技术科普与行业落地案例带到你的指尖，推动智能在每个场景里“会思考”。', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  PROXIO_HERO_BUTTON_1_TEXT: '开始体验', // 英雄区按钮
+  PROXIO_HERO_BUTTON_1_TEXT: '查看最新案例', // 英雄区按钮
   PROXIO_HERO_BUTTON_1_URL:
-    'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
-  PROXIO_HERO_BUTTON_2_TEXT: '在Github上关注', // 英雄区按钮
-  PROXIO_HERO_BUTTON_2_URL: 'https://github.com/tangly1024/NotionNext', // 英雄区按钮
-  PROXIO_HERO_BUTTON_2_ICON: '/images/starter/github-mark.svg', // 英雄区按钮2的图标，不需要则留空
+    'https://opencreator.io/', // 英雄区按钮
+  PROXIO_HERO_BUTTON_2_TEXT: '在Discord上试用', // 英雄区按钮
+  PROXIO_HERO_BUTTON_2_URL: 'https://discord.com/channels/1321364264409370644/onboarding', // 英雄区按钮
+  PROXIO_HERO_BUTTON_2_ICON: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAALxn2i1wMtd7CFG5whDOX5zKUI_JvW-AAIDIAACamOwVRP_nPKHeEkYNgQ.svg', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
   PROXIO_HERO_BANNER_IMAGE: '', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
@@ -33,7 +33,7 @@ const CONFIG = {
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_3: '',
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_4: '',
 
-  PROXIO_ANNOUNCEMENT_ENABLE: true, //公告文字区块
+  PROXIO_ANNOUNCEMENT_ENABLE: false, //公告文字区块
 
   // 特性区块
   PROXIO_FEATURE_ENABLE: true, // 特性区块开关
@@ -176,7 +176,7 @@ const CONFIG = {
   ],
 
   // 关于作者区块
-  PROXIO_ABOUT_ENABLE: true, // 关于作者区块区块开关
+  PROXIO_ABOUT_ENABLE: false, // 关于作者区块区块开关
   PROXIO_ABOUT_TITLE: '关于作者',
   PROXIO_ABOUT_TEXT_1: 'I am an Architect Turned Into a Product Designer',
   PROXIO_ABOUT_TEXT_2:
@@ -262,7 +262,7 @@ const CONFIG = {
   PROXIO_404_BACK: '回到主页',
 
   // 页面底部的行动呼吁模块
-  PROXIO_CTA_ENABLE: true,
+  PROXIO_CTA_ENABLE: false,
   PROXIO_CTA_TITLE: '与我建立联系',
   PROXIO_CTA_TITLE_2: '让我们立刻启动您的项目',
   PROXIO_CTA_DESCRIPTION:
@@ -272,7 +272,7 @@ const CONFIG = {
   PROXIO_CTA_BUTTON_TEXT: '联系我',
 
   PROXIO_POST_REDIRECT_ENABLE: true, // 默認開啟重定向
-  PROXIO_POST_REDIRECT_URL: 'https://blog.tangly1024.com', // 重定向域名
+  PROXIO_POST_REDIRECT_URL: 'https://agitorch.fun', // 重定向域名
   PROXIO_NEWSLETTER: process.env.NEXT_PUBLIC_THEME_PROXIO_NEWSLETTER || false // 是否开启邮件订阅 请先配置mailchimp功能 https://docs.tangly1024.com/article/notion-next-mailchimp
 }
 export default CONFIG
