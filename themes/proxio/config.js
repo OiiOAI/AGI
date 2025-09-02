@@ -7,7 +7,7 @@ const CONFIG = {
 
   // 英雄区块导航
   PROXIO_HERO_ENABLE: true, // 开启英雄区
-  PROXIO_HERO_TITLE_1: '盗火者：路漫漫其修远兮，吾将上下而求索。', // 英雄区文字
+  PROXIO_HERO_TITLE_1: 'AGI盗火者：路漫漫其修远兮，吾将上下而求索。', // 英雄区文字
   PROXIO_HERO_TITLE_2: '将最前沿的 AGI 技术科普与行业落地案例带到你的指尖，推动智能在每个场景里“会思考”。', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
   PROXIO_HERO_BUTTON_1_TEXT: '查看最新案例', // 英雄区按钮
@@ -15,7 +15,7 @@ const CONFIG = {
     'https://opencreator.io/', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_TEXT: '在Discord上试用', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_URL: 'https://discord.com/channels/1321364264409370644/onboarding', // 英雄区按钮
-  PROXIO_HERO_BUTTON_2_ICON: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAALxn2i1wMtd7CFG5whDOX5zKUI_JvW-AAIDIAACamOwVRP_nPKHeEkYNgQ.svg', // 英雄区按钮2的图标，不需要则留空
+  PROXIO_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
   PROXIO_HERO_BANNER_IMAGE: '', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
@@ -28,7 +28,7 @@ const CONFIG = {
   PROXIO_BLOG_TEXT_1: '我的最新动态',
 
   // 区块默认内容显示文章的summary文本，但也支持用自定义图片或logo德国替换掉占位显示内容
-  PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: '', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
+  PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0EGi2bjJdRz-bhslbwvg-t5pgr-I1AAIvIwACamOwVaCHErZVXSScNgQ.png', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_2: '',
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_3: '',
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_4: '',
