@@ -3,7 +3,7 @@
  */
 const CONFIG = {
   PROXIO_WELCOME_COVER_ENABLE: true, //是否显示页面进入的欢迎文字
-  PROXIO_WELCOME_TEXT: '欢迎来到此网站，点击任意位置进入', // 欢迎文字，留空则不启用
+  PROXIO_WELCOME_TEXT: '来都来了，交个朋友', // 欢迎文字，留空则不启用
 
   // 英雄区块导航
   PROXIO_HERO_ENABLE: true, // 开启英雄区
@@ -28,8 +28,8 @@ const CONFIG = {
   PROXIO_BLOG_TEXT_1: '我的最新动态',
 
   // 区块默认内容显示文章的summary文本，但也支持用自定义图片或logo德国替换掉占位显示内容
-  PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0EGi2bjJdRz-bhslbwvg-t5pgr-I1AAIvIwACamOwVaCHErZVXSScNgQ.png', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
-  PROXIO_BLOG_PLACEHOLDER_IMG_URL_2: '',
+  PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0Z2i2kJeN6DSzoWCAH-x69owu71CSAALYIwACamOwVa1wZEDeJU0ENgQ.png', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
+  PROXIO_BLOG_PLACEHOLDER_IMG_URL_2: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0W2i2kBcHzfOqktpTJ-kSutTHQLRdAALKIwACamOwVeYnLadeFdXnNgQ.png',
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_3: '',
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_4: '',
 
