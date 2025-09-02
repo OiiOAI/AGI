@@ -13,8 +13,8 @@ const CONFIG = {
   PROXIO_HERO_BUTTON_1_TEXT: '查看最新案例', // 英雄区按钮
   PROXIO_HERO_BUTTON_1_URL:
     'https://opencreator.io/', // 英雄区按钮
-  PROXIO_HERO_BUTTON_2_TEXT: '在Discord上试用', // 英雄区按钮
-  PROXIO_HERO_BUTTON_2_URL: 'https://discord.com/channels/1321364264409370644/onboarding', // 英雄区按钮
+  PROXIO_HERO_BUTTON_2_TEXT: '在Github上查看', // 英雄区按钮
+  PROXIO_HERO_BUTTON_2_URL: 'https://github.com/OiiOAI?tab=repositories', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
@@ -28,10 +28,10 @@ const CONFIG = {
   PROXIO_BLOG_TEXT_1: '我的最新动态',
 
   // 区块默认内容显示文章的summary文本，但也支持用自定义图片或logo德国替换掉占位显示内容
-  PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0Z2i2kJeN6DSzoWCAH-x69owu71CSAALYIwACamOwVa1wZEDeJU0ENgQ.png', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
-  PROXIO_BLOG_PLACEHOLDER_IMG_URL_2: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0W2i2kBcHzfOqktpTJ-kSutTHQLRdAALKIwACamOwVeYnLadeFdXnNgQ.png',
-  PROXIO_BLOG_PLACEHOLDER_IMG_URL_3: '',
-  PROXIO_BLOG_PLACEHOLDER_IMG_URL_4: '',
+  PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0-Wi2q_lPTEfURJM9gw-Hl9ltJzP-AAJhFQACamO4VdU0AWqPhZlTNgQ.png', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
+  PROXIO_BLOG_PLACEHOLDER_IMG_URL_2: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0-2i2q_kd7B0fI75CJZP5XGs5m8jIAAJjFQACamO4VU8JMkDGGQRCNgQ.png',
+  PROXIO_BLOG_PLACEHOLDER_IMG_URL_3: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0-Gi2q_lyHV_bi00vkjwntPmDfQQtAAJgFQACamO4VRQRav6Bpai_NgQ.png',
+  PROXIO_BLOG_PLACEHOLDER_IMG_URL_4: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0-mi2q_mBcBhYPi94gSVbJLGr7NFTAAJiFQACamO4VQltistBFuAeNgQ.png',
 
   PROXIO_ANNOUNCEMENT_ENABLE: false, //公告文字区块
 
