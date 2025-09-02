@@ -18,7 +18,7 @@ const CONFIG = {
   PROXIO_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
-  PROXIO_HERO_BANNER_IMAGE: '', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
+  PROXIO_HERO_BANNER_IMAGE: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL5Hmi3Jqq65R_UD-VjWTgcMtWATdckAAK8GgACamO4Vcr2GK_hjCMZNgQ.png', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
   PROXIO_HERO_BANNER_IFRAME_URL: '', // hero背景区内嵌背景网页 ，可以配置一个网页地址，例如动画网页https://my.spline.design/untitled-b0c6e886227646c34afc82cdc6de4ca2/
 
   // 文章区块
@@ -60,12 +60,12 @@ const CONFIG = {
     '精益求精雕琢每个元素，确保成品精致统一，令人过目难忘',
 
   PROXIO_FEATURE_BUTTON_TEXT: '了解更多', // 按钮文字
-  PROXIO_FEATURE_BUTTON_URL: 'https://github.com/tangly1024/NotionNext', // 按钮跳转
+  PROXIO_FEATURE_BUTTON_URL: 'https://github.com/OiiOAI?tab=repositories', // 按钮跳转
 
   // 首页生涯区块
   PROXIO_CAREER_ENABLE: true, // 区块开关
   PROXIO_CAREER_TITLE: '生涯',
-  PROXIO_CAREER_TEXT: '以下是我的核心技能',
+  PROXIO_CAREER_TEXT: '我的核心技能',
 
   // 生涯内容卡牌 ，title是标题 ，bio是备注，text是详情
   PROXIO_CAREERS: [
@@ -107,7 +107,7 @@ const CONFIG = {
   PROXIO_TESTIMONIALS_TITLE: '用户反馈',
   PROXIO_TESTIMONIALS_TEXT_1: '我的朋友怎么说',
   PROXIO_TESTIMONIALS_TEXT_2:
-    '数千位站长选择用NotionNext搭建他们的网站,通过帮助手册、交流社群以及技术咨询，大家成功上线了自己的网站',
+    '擅用第一性原理拆解复杂业务，以AI+数据驱动实现商业价值倍增',
 
   // 用户测评处的跳转按钮
   PROXIO_TESTIMONIALS_BUTTON_URL: '/about',
@@ -189,10 +189,12 @@ const CONFIG = {
   // 横向滚动文字
   PROXIO_BRANDS_ENABLE: true, // 滚动文字
   PROXIO_BRANDS: [
-    'Web Design',
-    'Logo Design',
-    'Mobile App Design',
-    'Product Design'
+    '增长黑客',
+    'AI营销',
+    '客户管理',
+    '商业思维',
+    '产品经理',
+    '创业者'
   ],
 
   PROXIO_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
@@ -204,17 +206,21 @@ const CONFIG = {
       name: '友情链接',
       menus: [
         {
-          title: 'Tangly的学习笔记',
-          href: 'https://blog.tangly1024.com'
+          title: 'OOMOL Studio',
+          href: 'https://oomol.com/zh-CN/'
         },
         {
           title: 'NotionNext',
           href: 'https://www.tangly1024.com'
+        },
+        {
+          title: ' WaytoAgi',
+          href: 'https://www.waytoagi.com/zh'
         }
       ]
     },
     {
-      name: '开发者',
+      name: '开源项目',
       menus: [
         { title: 'Github', href: 'https://github.com/tangly1024/NotionNext' },
         {
