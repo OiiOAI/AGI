@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 // import '@/styles/animate.css' // @see https://animate.style/
 import '@/styles/globals.css'
 import '@/styles/utility-patterns.css'
@@ -68,6 +69,7 @@ const MyApp = ({ Component, pageProps }) => {
       ) : (
         content
       )}
+      <Analytics />
     </>
   )
 }
