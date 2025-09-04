@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 // eslint-disable-next-line @next/next/no-document-import-in-page
 import BLOG from '@/blog.config'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
@@ -58,6 +59,7 @@ class MyDocument extends Document {
                 crossOrigin='anonymous'
                 referrerPolicy='no-referrer'
               />
+            <Analytics />
             </>
           )}
 
