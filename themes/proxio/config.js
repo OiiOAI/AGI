@@ -7,12 +7,12 @@ const CONFIG = {
 
   // 英雄区块导航
   PROXIO_HERO_ENABLE: true, // 开启英雄区
-  PROXIO_HERO_TITLE_1: 'AGI盗火者：路漫漫其修远兮，吾将上下而求索。', // 英雄区文字
-  PROXIO_HERO_TITLE_2: '将最前沿的 AGI 技术科普与行业落地案例带到你的指尖，推动智能在每个场景里“会思考”。', // 英雄区文字
+  PROXIO_HERO_TITLE_1: 'AGITORCH：路漫漫其修远兮，吾将上下而求索。', // 英雄区文字
+  PROXIO_HERO_TITLE_2: '将最前沿的 AGI 技术科普与行业落地案例带到你的指尖，推动智能在每个场景里“思考&行动”。', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
   PROXIO_HERO_BUTTON_1_TEXT: '查看最新案例', // 英雄区按钮
   PROXIO_HERO_BUTTON_1_URL:
-    'https://opencreator.io/', // 英雄区按钮
+    'https://oomol.com/', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_TEXT: '在Github上查看', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_URL: 'https://github.com/OiiOAI?tab=repositories', // 英雄区按钮
   PROXIO_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
@@ -23,9 +23,9 @@ const CONFIG = {
 
   // 文章区块
   PROXIO_BLOG_ENABLE: true, // 首页博文区块开关
-  PROXIO_BLOG_TITLE: '作品',
+  PROXIO_BLOG_TITLE: '我的作品',
   PROXIO_BLOG_COUNT: 4, // 首页博文区块展示前4篇文章
-  PROXIO_BLOG_TEXT_1: 'Vibe Coding作品',
+  PROXIO_BLOG_TEXT_1: 'Vibe Coding｜可卖',
 
   // 区块默认内容显示文章的summary文本，但也支持用自定义图片或logo德国替换掉占位显示内容
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: 'https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAL0-Wi2q_lPTEfURJM9gw-Hl9ltJzP-AAJhFQACamO4VdU0AWqPhZlTNgQ.png', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
@@ -64,8 +64,8 @@ const CONFIG = {
 
   // 首页生涯区块
   PROXIO_CAREER_ENABLE: true, // 区块开关
-  PROXIO_CAREER_TITLE: '生涯',
-  PROXIO_CAREER_TEXT: '我的核心技能',
+  PROXIO_CAREER_TITLE: '我的技能',
+  PROXIO_CAREER_TEXT: '核心能力｜接资讯',
 
   // 生涯内容卡牌 ，title是标题 ，bio是备注，text是详情
   PROXIO_CAREERS: [
