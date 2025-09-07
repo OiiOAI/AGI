@@ -96,23 +96,36 @@ export const MenuItem = ({ link }) => {
           </button>
 
           <div
-            className={`submenu dark:border-gray-600 absolute left-0 top-full mt-2 w-[250px] rounded-sm bg-white p-4 transition-all duration-300 dark:bg-dark-2 shadow-lg overflow-hidden z-50 ${
-              isSubMenuOpen ? 'max-h-96 opacity-100 visible' : 'max-h-0 opacity-0 invisible'
-            }`}>
-            {link.subMenus.map((sLink, index) => (
-              <SmartLink
-                key={index}
-                href={sLink.href}
-                target={link?.target}
-                className='block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary transition-colors'
-                onClick={handleSubMenuClick}
-              >
-                <span className='text-md ml-2 whitespace-nowrap'>
-                  {sLink.icon && <i className={sLink.icon + ' mr-2 my-auto'} />}{' '}
-                  {sLink.title}
-                </span>
-              </SmartLink>
-            ))}
+            className={`submenu absolute left-0 top-full mt-3 w-[280px] rounded-xl bg-gray-800/90 backdrop-blur-xl border border-gray-600/30 shadow-2xl overflow-hidden z-50 transition-all duration-300 ease-out ${
+              isSubMenuOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'
+            } dark:bg-gray-900/95 dark:border-gray-700/40 dark:shadow-black/30`}>
+            <div className="p-2">
+              {link.subMenus.map((sLink, index) => (
+                <div key={index}>
+                  <SmartLink
+                    href={sLink.href}
+                    target={link?.target}
+                    className='group flex items-center rounded-lg px-4 py-3 text-sm font-medium text-gray-200 hover:text-white hover:bg-white/10 transition-all duration-200'
+                    onClick={handleSubMenuClick}
+                  >
+                    {sLink.icon && (
+                      <i className={`${sLink.icon} mr-3 text-base transition-transform duration-200 group-hover:scale-110 ${index === 0 ? 'text-blue-400' : 'text-gray-400'}`} />
+                    )}
+                    <span className='whitespace-nowrap flex-1'>
+                      {sLink.title}
+                    </span>
+                    <div className="ml-auto opacity-0 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-1">
+                      <svg className="w-4 h-4 text-gray-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </SmartLink>
+                  {index < link.subMenus.length - 1 && (
+                    <div className="h-px bg-gray-700/30 mx-4 my-1"></div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </>
       )}
