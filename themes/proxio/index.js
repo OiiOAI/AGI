@@ -81,7 +81,7 @@ const LayoutBase = props => {
             {/* 鼠标阻尼动画 */}
             <Lenis />
             {/* 鼠标跟随动画 */}
-            <CursorDot />
+            {/* <CursorDot /> */}
             {/* <MadeWithButton/> */}
         </div>
     )
