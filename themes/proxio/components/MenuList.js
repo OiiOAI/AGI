@@ -2,7 +2,7 @@ import BLOG from '@/blog.config'
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { MenuItem } from './MenuItem'
 
 /**
@@ -13,6 +13,7 @@ export const MenuList = props => {
   const { locale } = useGlobal()
 
   const [showMenu, setShowMenu] = useState(false) // 控制菜单展开/收起状态
+  const menuRef = useRef(null)
   const router = useRouter()
 
   let links = [
@@ -52,42 +53,84 @@ export const MenuList = props => {
   }
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu) // 切换菜单状态
+    setShowMenu(prev => !prev) // 切换菜单状态
   }
 
-  useEffect(() => {
+  const closeMenu = () => {
     setShowMenu(false)
+  }
+
+  // 点击菜单外部区域时关闭菜单
+  const handleClickOutside = (e) => {
+    if (menuRef.current && !menuRef.current.contains(e.target)) {
+      closeMenu()
+    }
+  }
+
+  // 添加全局点击事件监听器
+  useEffect(() => {
+    if (showMenu) {
+      document.addEventListener('mousedown', handleClickOutside)
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside)
+      }
+    }
+  }, [showMenu])
+
+  // 在路由变化时关闭菜单
+  useEffect(() => {
+    closeMenu()
   }, [router])
+
+  // 处理菜单项点击
+  const handleMenuItemClick = () => {
+    closeMenu()
+  }
 
   if (!links || links.length === 0) {
     return null
   }
 
   return (
-    <div>
+    <>
       {/* 移动端菜单切换按钮 */}
       <button
-        id='navbarToggler'
         onClick={toggleMenu}
-        className={`absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden ${
-          showMenu ? 'navbarTogglerActive' : ''
-        }`}>
-        <span className='relative my-[6px] block h-[2px] w-[30px] bg-white duration-200 transition-all'></span>
-        <span className='relative my-[6px] block h-[2px] w-[30px] bg-white duration-200 transition-all'></span>
-        <span className='relative my-[6px] block h-[2px] w-[30px] bg-white duration-200 transition-all'></span>
+        className="navbarOpen absolute right-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 flex-col items-center justify-center space-y-1.5 rounded-full bg-primary lg:hidden"
+        aria-label={showMenu ? '关闭菜单' : '打开菜单'}
+        aria-expanded={showMenu}
+      >
+        <span
+          className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
+            showMenu ? 'translate-y-1.5 rotate-45' : ''
+          }`}></span>
+        <span
+          className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
+            showMenu ? 'opacity-0' : ''
+          }`}></span>
+        <span
+          className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
+            showMenu ? '-translate-y-1.5 -rotate-45' : ''
+          }`}></span>
       </button>
 
-      <nav
-        id='navbarCollapse'
-        className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6 ${
-          showMenu ? '' : 'hidden'
-        }`}>
-        <ul className='blcok lg:flex 2xl:ml-20'>
-          {links?.map((link, index) => (
-            <MenuItem key={index} link={link} />
-          ))}
-        </ul>
-      </nav>
-    </div>
+      {/* 导航菜单 */}
+      <div
+          ref={menuRef}
+          className={`menu-container transition-all duration-300 ease-in-out ${
+            showMenu
+              ? 'opacity-100 visible top-full max-h-screen'
+              : 'invisible top-[120%] opacity-0 max-h-0'
+          } absolute right-4 top-full z-40 w-[250px] rounded-md bg-white p-5 shadow-lg dark:bg-dark lg:visible lg:static lg:max-h-full lg:w-full lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent`}
+        >
+        <nav>
+          <ul className="block lg:flex lg:space-x-12">
+            {links.map((link, index) => (
+              <MenuItem key={index} link={link} />
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </>
   )
 }
