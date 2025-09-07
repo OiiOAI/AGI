@@ -121,7 +121,7 @@ export const MenuList = props => {
             showMenu
               ? 'opacity-100 visible top-full max-h-screen'
               : 'invisible top-[120%] opacity-0 max-h-0'
-          } absolute right-4 top-full z-40 w-[250px] rounded-md bg-white p-5 shadow-lg dark:bg-dark lg:visible lg:static lg:max-h-full lg:w-full lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent`}
+          } absolute right-4 top-full z-40 w-[250px] rounded-md bg-transparent p-5 lg:visible lg:static lg:max-h-full lg:w-full lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent`}
         >
         <nav>
           <ul className="block lg:flex lg:space-x-12">
