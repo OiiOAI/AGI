@@ -214,8 +214,16 @@ const CONFIG = {
           href: 'https://www.tangly1024.com'
         },
         {
-          title: ' WaytoAgi',
+          title: 'WaytoAgi',
           href: 'https://www.waytoagi.com/zh'
+        },
+        {
+          title: 'aiwith.me',
+          href: 'https://aiwith.me/'
+        },
+        {
+          title: 'producthunt',
+          href: 'https://www.producthunt.com/?bc=1'
         }
       ]
     },
