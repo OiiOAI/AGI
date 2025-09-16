@@ -65,7 +65,7 @@ const CONFIG = {
   // 首页生涯区块
   PROXIO_CAREER_ENABLE: true, // 区块开关
   PROXIO_CAREER_TITLE: '我的技能',
-  PROXIO_CAREER_TEXT: '核心能力｜接资讯',
+  PROXIO_CAREER_TEXT: '核心能力｜可咨询',
 
   // 生涯内容卡牌 ，title是标题 ，bio是备注，text是详情
   PROXIO_CAREERS: [
